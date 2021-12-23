@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'tops#index'
   
   resources :lists, only: [:new, :create, :edit, :update, :destroy] do
-    resources :card, only: [:new, :create]
+    resources :cards, only: [:new, :create]
   end
   
 end
